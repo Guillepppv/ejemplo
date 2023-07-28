@@ -1,0 +1,332 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+margin: 0;
+}
+
+ h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25;}
+
+button{
+font-size: 1.25em;
+font-weight: bold;
+padding: 10px 30px;
+border-radius: 5px;
+border: 2px solid rgb(0, 0, 0);
+box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+color: white;
+background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(67, 24, 110);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+.color-acento{
+    color: blueviolet;
+}
+
+
+header{
+    background-color: rgb(107, 87, 167) ;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(107, 35, 175);
+    font-size: 1.50em;
+    
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
+header a:hover{
+    color: rgb(117, 42, 187);
+}
+
+#hero{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+height: 90vh;
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url("./imagen/fondo.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+
+}
+#hero h1{
+    color: rgb(243, 230, 230);
+}
+
+
+#oriente{
+   
+}
+#oriente .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#nuestros-elementales{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#nuestros-elementales .container{
+    padding: 150px 12px;
+}
+
+#nuestros-elementales h2{
+    margin-top: 0;
+}
+
+#nuestros-elementales p{
+    display: none;
+}
+
+#nuestros-elementales .carta{
+background-position: center center;
+background-size: cover;
+padding: 50px 0px;
+margin: 30px;
+border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url("./imagen/dragon1.jpg");
+    
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url("./imagen/anciano.jpg");
+
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url("./imagen/wei.jpg");
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+
+
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+
+  }
+
+#descubre{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+background-color: rgb(30, 30, 41);
+flex-direction: column;
+color: white;
+height: 80vh;
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url("./imagen/torii.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+
+#descubre h2{
+font-size: 7vw;
+}
+
+#descubre button{
+    font-size: 3vw;
+}
+
+footer{
+    background-color: rgb(245, 240, 240);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: gray;
+
+}
+
+footer .container{
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+
+}
+
+@media (min-width:720px){
+}
+header{
+    position: fixed;
+    width: 100%;
+    margin-top: 0px;
+}
+
+
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+#oriente .container{
+display: flex;
+justify-content: center;
+}
+
+#oriente .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+}
+
+#oriente .img-container{
+    background-image: url(./imagen/elemen5.png);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+}
+
+#nuestros-elementales .programa{
+   display: flex;
+   justify-content: center; 
+}
+
+#nuestros-elementales p{
+    display: block;
+    margin-bottom: 30px;
+
+}
+
+#nuestros-elementales h3{
+    margin-top: 0px;
+}
+
+#nuestros-elementales .carta{
+    padding: 40px;
+  
+}
+
+#caracteristicas{
+background-image: url(./imagen/sitio.jpg);
+background-repeat: no-repeat;
+background-size: 500px 400px;
+background-position: calc(100vw - 500px) 120px;
+}
+
+#caracteristicas .container{
+    text-align: initial;
+}
+
+#caracteristicas ul{
+    margin-left: 100px;
+ 
+}
+
+#descubre h2{
+font-size: 5em;
+}
+
+#descubre button{
+font-size: 2em;
+}
+
+
+#caracteristicas ul{
+    margin-left: 100px;
+}
+
+footer .container{
+    justify-content: flex-end;
+}
+
+@media (min-width: 1200px){
+    #caracteristicas{
+        background-position: calc(100vw -800px);
+    }
+}
+
